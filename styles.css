@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    color: #00d1b2;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.5s;
+}
+
+header.scrolled {
+    background: #000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d1b2;
+}
+
+/* Home Section */
+.home-section {
+    height: 100vh;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.home-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.home-section .content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Glassmorphism Section */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    margin: 50px 20px;
+    text-align: center;
+}
+
+/* Parallax Section */
+.parallax {
+    background: url('parallax-background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.parallax h2 {
+    font-size: 2.5em;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background: #00d1b2;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #00a38a;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #00d1b2;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
